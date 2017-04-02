@@ -1,0 +1,8 @@
+{
+    "token": "<application_token>",
+    "mailer": {
+        "service": "<email_provider| e.g. Gmail>",
+        "email": "<your_email_here>",
+        "pass": "<your_password_here>"
+    }
+}

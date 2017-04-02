@@ -1,0 +1,13 @@
+{
+  "port": 3000,
+  "mail": {
+    "from": "Uprise Bot <uprisebot@gmail.com>"
+  },
+  "questions": {
+    "default": [
+      "What did you do yesterday?",
+      "What do you plan on doing today?",
+      "Is there anything standing in your way?"
+    ]
+  }
+}
