@@ -1,7 +1,7 @@
 {
   "name": "uprisebot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Uprise bot is a bot for conducting your everyday stand up meetings.",
   "main": "src/index.js",
   "dependencies": {
     "async": "^1.5.0",
