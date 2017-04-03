@@ -18,3 +18,26 @@ Uprise bot is a bot for conducting your everyday stand up meetings.
 - ``` quit ```
 
     Ends the meeting.
+
+### Installation
+
+Clone the repository:
+```
+git clone https://github.com/edilsalvador/uprisebot
+```
+Install dependencies:
+```
+npm install
+```
+Configure your settings file.
+```
+Rename config/production.json.example to config/production.json
+```
+```
+Change attributes specified on the production.json
+```
+
+### Start uprisebot.
+```
+npm start
+```
