@@ -66,6 +66,7 @@ class manager {
                  * TODO: After storage implementation get rid of this.
                  */
                 let meeting = self.meetingExist(channelId);
+                
                 if (meeting && !meeting.isActive)
                     self.destroy(channelId);
 
@@ -75,8 +76,6 @@ class manager {
 
                 meeting = self.create(channelId);
                 let channel = new Channel(self.uprisebot);
-
-
 
                 channel
                     .getMembers(channelId)
@@ -95,10 +94,10 @@ class manager {
                                 });
                                 
                                 return meeting.start(bot, message);
+                            })
+                            .then(() => {
+                                self.destroy(channelId);
                             });
-                    })
-                    .then(() => {
-                        self.destroy(channelId);
                     })
                     .catch((err) => {
                         console.error('Error', err);
